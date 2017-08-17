@@ -1,0 +1,18 @@
+安装最新版3.52 3.x版本用的比较广泛
+
+python 解释器 Cpython
+
+基本变量
+
+number string False True 
+
+list tuple dict set
+
+定义函数def 函数参数 递归函数
+
+语句后面需要用:冒号标志
+
+高级特性 python基本原则 越简单越好
+
+切片(Slice)操作符[0:3] [:3] [-3:-1] [-3:] [:3:2] [::2] [2:-6:] 
+
