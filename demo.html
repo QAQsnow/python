@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>facebook</title>
+</head>
+<body>
+	<button onclick="checkLoginState();" onlogin="checkLoginState();">clickMe</button>
+  <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+ <script>
+  /*window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '925998217413015',
+      xfbml            : true,
+      version          : 'v2.2'
+    });
+    //FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "http://connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));*/
+   $.ajaxSetup({cache:true})
+   $.getScript("http://connect.facebook.net/en_US/all.js",function(){
+       FB.init({
+          appId            : '925998217413015',
+          xfbml            : true,
+          version          : 'v2.2'
+    });
+       FB.AppEvents.logPageView();
+   })
+</script>
+</body>		
+
+</html>
